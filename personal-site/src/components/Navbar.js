@@ -1,38 +1,77 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+
 export default function Navbar() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
-    <nav className="bg-gray-800 py-4 fixed top-0 left-0 right-0">
-      <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#intro" className="text-white text-xl font-bold">
-          Logo
-        </a>
-        <button className="md:hidden text-white focus:outline-none">
-          <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
-            <path
-              d="M4 6h16M4 12h16M4 18h16"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+    <nav className="bg-zinc-700 py-4 fixed top-0 left-0 right-0">
+      <div className="w-full h-full clear-both flex items-center justify-between py-0 px-[20px]">
+        <div className="flex items-center">
+          <a href="#intro" className="text-white text-xl font-bold">
+            Logo
+          </a>
+        </div>
+        <div className="flex items-center">
+          <button
+            className="text-white focus:outline-none"
+            onClick={toggleSidebar}
+          >
+            <FontAwesomeIcon icon={faBars} size="2x" />
+          </button>
+        </div>
+      </div>
+      {}
+      <div
+        className={`fixed top-0 right-0 h-screen w-64 bg-zinc-700 transition-transform duration-300 ease-in-out transform ${
+          isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <button
+          className="absolute top-4 right-4 text-white focus:outline-none"
+          onClick={toggleSidebar}
+        >
+          <FontAwesomeIcon icon={faTimes} size="2x" />
         </button>
-        <ul className="hidden md:flex space-x-4">
+        <ul className="mt-16 space-y-4">
           <li>
-            <a href="#about" className="text-white hover:text-violet-900 font-bold">
+            <a
+              href="#about"
+              className="block text-white hover:text-teal-400 px-6 py-2"
+              onClick={toggleSidebar}
+            >
               About
             </a>
           </li>
           <li>
-            <a href="#skills" className="text-white hover:text-violet-900 font-bold">
+            <a
+              href="#skills"
+              className="block text-white hover:text-teal-400 px-6 py-2"
+              onClick={toggleSidebar}
+            >
               Skills
             </a>
           </li>
           <li>
-            <a href="#projects" className="text-white hover:text-violet-900 font-bold">
+            <a
+              href="#projects"
+              className="block text-white hover:text-teal-400 px-6 py-2"
+              onClick={toggleSidebar}
+            >
               Projects
             </a>
           </li>
           <li>
-            <a href="#contact" className="text-white hover:text-violet-900 font-bold">
+            <a
+              href="#contact"
+              className="block text-white hover:text-teal-400 px-6 py-2"
+              onClick={toggleSidebar}
+            >
               Contact
             </a>
           </li>
