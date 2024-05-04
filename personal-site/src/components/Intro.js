@@ -2,7 +2,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Intro() {
   return (
-    <section id="intro" className="py-16 bg-gray-900">
+    <section id="intro" className="py-16">
       <div className="container mx-auto px-4 content-center">
         <h1 className="text-4xl font-bold mb-8">
           <Typewriter
