@@ -26,7 +26,6 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-      {}
       <div
         className={`fixed top-0 right-0 h-screen w-64 bg-zinc-700 transition-transform duration-300 ease-in-out transform ${
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
@@ -43,7 +42,7 @@ export default function Navbar() {
             <a
               href="#about"
               className="block text-white hover:text-teal-400 px-6 py-2"
-              onClick={toggleSidebar}
+              onClick={() => toggleSidebar()}
             >
               About
             </a>
@@ -52,7 +51,7 @@ export default function Navbar() {
             <a
               href="#skills"
               className="block text-white hover:text-teal-400 px-6 py-2"
-              onClick={toggleSidebar}
+              onClick={() => toggleSidebar()}
             >
               Skills
             </a>
@@ -61,7 +60,7 @@ export default function Navbar() {
             <a
               href="#projects"
               className="block text-white hover:text-teal-400 px-6 py-2"
-              onClick={toggleSidebar}
+              onClick={() => toggleSidebar()}
             >
               Projects
             </a>
@@ -70,7 +69,7 @@ export default function Navbar() {
             <a
               href="#contact"
               className="block text-white hover:text-teal-400 px-6 py-2"
-              onClick={toggleSidebar}
+              onClick={() => toggleSidebar()}
             >
               Contact
             </a>
