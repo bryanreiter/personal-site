@@ -1,6 +1,9 @@
 import Typewriter from "typewriter-effect";
+import { useState } from "react";
 
 export default function Intro() {
+  const [showSecondTypewriter, setShowSecondTypewriter] = useState(false);
+  const [showThirdTypewriter, setThirdSecondTypewriter] = useState(false);
   return (
     <section
       id="intro"
@@ -8,16 +11,48 @@ export default function Intro() {
     >
       <div className="container mx-auto px-4 content-center">
         <h1 className="text-4xl font-bold mb-8">
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString(
-                  `Hey, I'm <span style="color: #6d28d9;">Bryan Reiter!</span>`
-                )
-                .callFunction(() => {})
-                .start();
-            }}
-          />
+          <div style={{ fontFamily: "monospace" }}>
+            <Typewriter
+              options={{
+                delay: 50,
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString(
+                    `Hey, I'm <span style="color: #6d28d9;">Bryan Reiter</span>`
+                  )
+                  .callFunction(() => {
+                    setShowSecondTypewriter(true);
+                  })
+                  .start();
+              }}
+            />
+            {showSecondTypewriter && (
+              <Typewriter
+                options={{
+                  delay: 50,
+                }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("I'm a senior Computer Science Major")
+                    .callFunction(() => {
+                      setThirdSecondTypewriter(true);
+                    })
+                    .start();
+                }}
+              />
+            )}
+            {showThirdTypewriter && (
+              <Typewriter
+                options={{
+                  delay: 50,
+                }}
+                onInit={(typewriter) => {
+                  typewriter.typeString("At Temple University.").start();
+                }}
+              />
+            )}
+          </div>
         </h1>
       </div>
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
