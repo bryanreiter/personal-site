@@ -19,9 +19,9 @@ export default function Intro() {
   return (
     <section
       id="intro"
-      className="min-h-screen flex items-center justify-center py-16 px-4"
+      className="min-h-screen flex flex-col justify-center py-16 px-4 relative"
     >
-      <div className="container mx-auto px-4 content-center">
+      <div className="container mx-auto px-4 content-center flex-grow">
         <h1 className="text-2xl md:text-4xl font-bold mb-8">
           <div style={{ fontFamily: "monospace" }}>
             <Typewriter
@@ -31,7 +31,7 @@ export default function Intro() {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    `Hey, I'm <span style="color: #6d28d9;">Bryan Reiter</span>,<br />a Senior Computer Science Major<br />at Temple University.<br /><span style="font-size: 1rem md:font-size: 1.5rem;">I'm a <span style="color: #6d28d9;">software developer</span>, <span style="color: #6d28d9;">video game nerd</span>,<br/ >and a huge fan of <span style="color: #6d28d9;">all things tech</span>.<br /><br />Click the arrow below to learn a little bit more about me!<br /><br />Wanna connect right away? Choose how below:</span>`
+                    `Hey, I'm <span style="color: #6d28d9;">Bryan Reiter</span>,<br />a Senior Computer Science Major<br />at Temple University.<br /><span style="font-size: 1rem md:font-size: 1.5rem;">I'm a <span style="color: #6d28d9;">software developer</span> and <span style="color: #6d28d9;">video game nerd</span> at heart.<br /><br /><span style="color: #6d28d9;">Click the arrow below</span> to get started<br />or <span style="color: #6d28d9;">choose how to connect</span> right away:</span>`
                   )
                   .callFunction(() => {
                     setTimeout(() => setShowGithub(true), 500);
@@ -45,7 +45,7 @@ export default function Intro() {
             />
           </div>
         </h1>
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="flex flex-wrap justify-center gap-5 mb-8">
           <div className={`icon ${showGithub ? "show" : ""}`}>
             <a
               href="https://github.com/bryanreiter"

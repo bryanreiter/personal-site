@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="bg-zinc-800 text-white">
       <Navbar />
-      <main className="flex flex-col items-center pt-16">
+      <main className="flex flex-col items-center pt-20">
         <div className="w-full">
           <Intro />
           <About />
