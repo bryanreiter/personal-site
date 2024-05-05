@@ -45,7 +45,7 @@ export default function Intro() {
             />
           </div>
         </h1>
-        <div className="flex flex-wrap justify-center gap-5 mb-8">
+        <div className="flex flex-wrap justify-center gap-5">
           <div className={`icon ${showGithub ? "show" : ""}`}>
             <a
               href="https://github.com/bryanreiter"
