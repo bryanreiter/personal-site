@@ -12,7 +12,7 @@ export default function Intro() {
             onInit={(typewriter) => {
               typewriter
                 .typeString(
-                  `Hey, I'm <span style="color: #4c1d95;">Bryan Reiter!</span>`
+                  `Hey, I'm <span style="color: #6d28d9;">Bryan Reiter!</span>`
                 )
                 .callFunction(() => {})
                 .start();
