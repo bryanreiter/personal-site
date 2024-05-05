@@ -10,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-zinc-700 py-4 fixed top-0 left-0 right-0">
+    <nav className="bg-zinc-700 py-4 fixed top-0 left-0 right-0 z-10">
       <div className="w-full h-full clear-both flex items-center justify-between py-0 px-[20px]">
         <div className="flex items-center">
           <a href="#intro" className="text-white text-xl font-bold">

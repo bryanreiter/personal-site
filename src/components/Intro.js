@@ -19,33 +19,33 @@ export default function Intro() {
   return (
     <section
       id="intro"
-      className="min-h-screen flex items-center justify-center py-16 relative"
+      className="min-h-screen flex items-center justify-center py-16 px-4"
     >
       <div className="container mx-auto px-4 content-center">
-        <h1 className="text-4xl font-bold mb-8">
+        <h1 className="text-2xl md:text-4xl font-bold mb-8">
           <div style={{ fontFamily: "monospace" }}>
             <Typewriter
               options={{
-                delay: 50,
+                delay: 30,
               }}
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    `Hey, I'm <span style="color: #6d28d9;">Bryan Reiter</span>,<br />a Senior Computer Science Major<br />at Temple University.<br /><span style="font-size: 1.5rem;">I'm a software developer, video game nerd,<br/ >and a huge fan of all things tech.<br /><br />Click the arrow below to learn a little bit more about me!<br /><br />Wanna connect right away? Choose how:</span>`
+                    `Hey, I'm <span style="color: #6d28d9;">Bryan Reiter</span>,<br />a Senior Computer Science Major<br />at Temple University.<br /><span style="font-size: 1rem md:font-size: 1.5rem;">I'm a <span style="color: #6d28d9;">software developer</span>, <span style="color: #6d28d9;">video game nerd</span>,<br/ >and a huge fan of <span style="color: #6d28d9;">all things tech</span>.<br /><br />Click the arrow below to learn a little bit more about me!<br /><br />Wanna connect right away? Choose how below:</span>`
                   )
                   .callFunction(() => {
-                    setTimeout(() => setShowGithub(true), 1000);
-                    setTimeout(() => setShowLinkedin(true), 2000);
-                    setTimeout(() => setShowInstagram(true), 3000);
-                    setTimeout(() => setShowEnvelope(true), 4000);
-                    setTimeout(() => setShowPhone(true), 5000);
+                    setTimeout(() => setShowGithub(true), 500);
+                    setTimeout(() => setShowLinkedin(true), 1000);
+                    setTimeout(() => setShowInstagram(true), 1500);
+                    setTimeout(() => setShowEnvelope(true), 2000);
+                    setTimeout(() => setShowPhone(true), 2500);
                   })
                   .start();
               }}
             />
           </div>
         </h1>
-        <div className="flex row items-center gap-5">
+        <div className="flex flex-wrap justify-center gap-5">
           <div className={`icon ${showGithub ? "show" : ""}`}>
             <a
               href="https://github.com/bryanreiter"
