@@ -5,6 +5,7 @@ import {
   faGithub,
   faLinkedin,
   faInstagram,
+  faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -13,6 +14,7 @@ export default function Intro() {
   const [showGithub, setShowGithub] = useState(false);
   const [showLinkedin, setShowLinkedin] = useState(false);
   const [showInstagram, setShowInstagram] = useState(false);
+  const [showDiscord, setShowDiscord] = useState(false);
   const [showEnvelope, setShowEnvelope] = useState(false);
   const [showPhone, setShowPhone] = useState(false);
 
@@ -21,7 +23,8 @@ export default function Intro() {
       id="intro"
       className="min-h-screen flex flex-col justify-center py-16 px-4 relative"
     >
-      <div className="container mx-auto px-4 content-center flex-grow">
+      <div className="container mx-auto text-center">
+      <div className="max-w-m mx-auto">
         <h1 className="text-2xl md:text-4xl font-bold mb-8">
           <div style={{ fontFamily: "monospace" }}>
             <Typewriter
@@ -31,20 +34,22 @@ export default function Intro() {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    `Hey, I'm <span style="color: #6d28d9;">Bryan Reiter</span>,<br />a Senior Computer Science Major<br />at Temple University.<br /><span style="font-size: 1rem md:font-size: 1.5rem;">I'm a <span style="color: #6d28d9;">software developer</span> and <span style="color: #6d28d9;">video game nerd</span> at heart.<br /><br /><span style="color: #6d28d9;">Click the arrow below</span> to get started<br />or <span style="color: #6d28d9;">choose how to connect</span> right away:</span>`
+                    `Hey, I'm <span style="color: #6d28d9;">Bryan Reiter</span>,<br />a Senior Computer Science Major<br />at Temple University.<br /><span style="font-size: 1rem md:font-size: 1.5rem;">I'm a <span style="color: #6d28d9;">software developer</span> and <span style="color: #6d28d9;">video game nerd</span> at heart.<br /><br /><span style="color: #6d28d9;">Scroll</span> to get started<br />or <span style="color: #6d28d9;">choose how to connect</span> below:</span>`
                   )
                   .callFunction(() => {
                     setTimeout(() => setShowGithub(true), 500);
                     setTimeout(() => setShowLinkedin(true), 1000);
                     setTimeout(() => setShowInstagram(true), 1500);
-                    setTimeout(() => setShowEnvelope(true), 2000);
-                    setTimeout(() => setShowPhone(true), 2500);
+                    setTimeout(() => setShowDiscord(true), 2000);
+                    setTimeout(() => setShowEnvelope(true), 2500);
+                    setTimeout(() => setShowPhone(true), 3000);
                   })
                   .start();
               }}
             />
           </div>
         </h1>
+        </div>
         <div className="flex flex-wrap justify-center gap-5">
           <div className={`icon ${showGithub ? "show" : ""}`}>
             <a
@@ -73,6 +78,15 @@ export default function Intro() {
               <FontAwesomeIcon icon={faInstagram} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-purple-600" />
             </a>
           </div>
+          <div className={`icon ${showDiscord ? "show" : ""}`}>
+            <a
+              href="https://discordapp.com/users/271769741457227776"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <FontAwesomeIcon icon={faDiscord} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-purple-600" />
+            </a>
+          </div>
           <div className={`icon ${showEnvelope ? "show" : ""}`}>
             <a href="mailto:bryanreiter2002@gmail.com">
               <FontAwesomeIcon icon={faEnvelope} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-purple-600" />
@@ -84,24 +98,6 @@ export default function Intro() {
             </a>
           </div>
         </div>
-      </div>
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <a href="#about" className="text-white hover:text-gray-300">
-          <svg
-            className="w-6 h-6 animate-bounce"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
-        </a>
       </div>
     </section>
   );
