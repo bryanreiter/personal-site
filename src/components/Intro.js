@@ -57,7 +57,7 @@ export default function Intro() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <FontAwesomeIcon icon={faGithub} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-purple-600"/>
+              <FontAwesomeIcon icon={faGithub} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-midnightPurple"/>
             </a>
           </div>
           <div className={`icon ${showLinkedin ? "show" : ""}`}>
@@ -66,7 +66,7 @@ export default function Intro() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <FontAwesomeIcon icon={faLinkedin} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-purple-600" />
+              <FontAwesomeIcon icon={faLinkedin} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-midnightPurple" />
             </a>
           </div>
           <div className={`icon ${showInstagram ? "show" : ""}`}>
@@ -75,7 +75,7 @@ export default function Intro() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <FontAwesomeIcon icon={faInstagram} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-purple-600" />
+              <FontAwesomeIcon icon={faInstagram} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-midnightPurple" />
             </a>
           </div>
           <div className={`icon ${showDiscord ? "show" : ""}`}>
@@ -84,17 +84,17 @@ export default function Intro() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <FontAwesomeIcon icon={faDiscord} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-purple-600" />
+              <FontAwesomeIcon icon={faDiscord} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-midnightPurple" />
             </a>
           </div>
           <div className={`icon ${showEnvelope ? "show" : ""}`}>
             <a href="mailto:bryanreiter2002@gmail.com">
-              <FontAwesomeIcon icon={faEnvelope} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-purple-600" />
+              <FontAwesomeIcon icon={faEnvelope} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-midnightPurple" />
             </a>
           </div>
           <div className={`icon ${showPhone ? "show" : ""}`}>
             <a href="tel:484-268-4900">
-              <FontAwesomeIcon icon={faPhone} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-purple-600" />
+              <FontAwesomeIcon icon={faPhone} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-midnightPurple" />
             </a>
           </div>
         </div>

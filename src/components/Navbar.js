@@ -22,7 +22,7 @@ export default function Navbar() {
             className="text-white focus:outline-none"
             onClick={toggleSidebar}
           >
-            <FontAwesomeIcon icon={faBars} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-purple-600" />
+            <FontAwesomeIcon icon={faBars} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-midnightPurple" />
           </button>
         </div>
       </div>
@@ -35,13 +35,13 @@ export default function Navbar() {
           className="absolute top-4 right-4 text-white focus:outline-none"
           onClick={toggleSidebar}
         >
-          <FontAwesomeIcon icon={faTimes} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-purple-600" />
+          <FontAwesomeIcon icon={faTimes} size="2x" className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-midnightPurple" />
         </button>
         <ul className="mt-16 space-y-4 text-xl font-bold">
           <li>
             <a
               href="#about"
-              className="block text-white hover:text-purple-600 px-6 py-2 "
+              className="block text-white hover:text-midnightPurple px-6 py-2 "
               onClick={() => toggleSidebar()}
             >
               About
@@ -50,7 +50,7 @@ export default function Navbar() {
           <li>
             <a
               href="#skills"
-              className="block text-white hover:text-purple-600 px-6 py-2"
+              className="block text-white hover:text-midnightPurple px-6 py-2"
               onClick={() => toggleSidebar()}
             >
               Skills
@@ -59,7 +59,7 @@ export default function Navbar() {
           <li>
             <a
               href="#projects"
-              className="block text-white hover:text-purple-600 px-6 py-2"
+              className="block text-white hover:text-midnightPurple px-6 py-2"
               onClick={() => toggleSidebar()}
             >
               Projects
@@ -68,7 +68,7 @@ export default function Navbar() {
           <li>
             <a
               href="#contact"
-              className="block text-white hover:text-purple-600 px-6 py-2"
+              className="block text-white hover:text-midnightPurple px-6 py-2"
               onClick={() => toggleSidebar()}
             >
               Contact
