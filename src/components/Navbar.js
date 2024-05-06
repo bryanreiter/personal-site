@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className="w-full h-full clear-both flex items-center justify-between py-0 px-[20px]">
         <div className="flex items-center">
           <a href="#intro" className="text-white text-xl font-bold">
-            Logo
+            Bryan Reiter
           </a>
         </div>
         <div className="flex items-center">
