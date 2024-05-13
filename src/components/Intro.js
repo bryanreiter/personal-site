@@ -34,7 +34,7 @@ export default function Intro() {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    `Hey, I'm <span style="color: #6d28d9;">Bryan Reiter</span>,<br />a Senior Computer Science Major<br />at Temple University.<br /><span style="font-size: 1rem md:font-size: 1.5rem;">I'm a <span style="color: #6d28d9;">software developer</span> and <span style="color: #6d28d9;">video game nerd</span> at heart.<br /><br /><span style="color: #6d28d9;">Scroll</span> to get started<br />or <span style="color: #6d28d9;">choose how to connect</span> below:</span>`
+                    `Hey, I'm <span style="color: #6d28d9;">Bryan Reiter</span>,<br />a Computer Science Graduate<br />from Temple University.<br /><span style="font-size: 1rem md:font-size: 1.5rem;">I'm a <span style="color: #6d28d9;">software developer</span> and <span style="color: #6d28d9;">video game nerd</span> at heart.<br /><br /><span style="color: #6d28d9;">Scroll</span> to get started<br />or <span style="color: #6d28d9;">choose how to connect</span> below:</span>`
                   )
                   .callFunction(() => {
                     setTimeout(() => setShowGithub(true), 500);
