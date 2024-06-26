@@ -16,14 +16,12 @@ export default function About() {
           <div className="flex flex-col h-full">
             <Card className="border-none bg-gradient-to-r from-midnightPurple to-blue-500 flex flex-col h-full">
               <CardHeader className="p-4">
-                <CardTitle className="text-lg md:text-xl">
-                  Temple University
-                </CardTitle>
-                <CardDescription className="text-white text-sm md:text-base">
-                  <em>Bachelor of Science in Computer Science</em>
+                <CardTitle>Temple University</CardTitle>
+                <CardDescription className="text-white">
+                <em>Bachelor of Science in Computer Science</em>
                 </CardDescription>
               </CardHeader>
-              <CardContent className="text-white flex-grow text-sm md:text-base p-4">
+              <CardContent className="text-white flex-grow">
                 <ul className="list-disc pl-5">
                   <li>Graduated with a 3.55 GPA</li>
                   <li>
@@ -42,14 +40,14 @@ export default function About() {
                   </li>
                 </ul>
               </CardContent>
-              <CardFooter className="text-white mt-auto p-4">
+              <CardFooter className="text-white mt-auto">
                 <em>August 2020 - May 2024</em>
               </CardFooter>
             </Card>
           </div>
           <div className="flex flex-col h-full">
             <Card className="border-none bg-gradient-to-r from-midnightPurple to-blue-500 flex flex-col h-full">
-              <CardHeader>
+              <CardHeader className="p-4">
                 <CardTitle>Victaulic Internship</CardTitle>
                 <CardDescription className="text-white">
                   <em>Master Data Management Intern at Victaulic</em>
