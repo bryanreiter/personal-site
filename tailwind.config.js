@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      colors: {
+        midnightPurple: "#6d28d9",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

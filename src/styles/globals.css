@@ -32,14 +32,25 @@ body {
   }
 }
 
-html{
-  scroll-snap-type: y mandatory;
+/* Apply snap-scrolling only for screens wider than 768px */
+@media (min-width: 768px) {
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 80px;
+  }
+
+  section {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
 }
 
-section{
-  height: 100vh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+/* For mobile screens */
+@media (max-width: 767px) {
+  section {
+    min-height: 100vh; /* Use min-height instead of fixed height */
+  }
 }
 
 .icon {
