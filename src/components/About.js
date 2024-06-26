@@ -18,7 +18,7 @@ export default function About() {
               <CardHeader className="p-4">
                 <CardTitle>Temple University</CardTitle>
                 <CardDescription className="text-white">
-                <em>Bachelor of Science in Computer Science</em>
+                  <em>Bachelor of Science in Computer Science</em>
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-white flex-grow">
@@ -89,9 +89,19 @@ export default function About() {
                 <ul className="list-disc pl-5">
                   <li>
                     Provided technical support to students, alumni, and staff
+                    through both phone calls and walk-ins using GenesysPureCloud
+                    and BMC Helix ITSM, ensuring prompt resolution and effi
+                    cient service
                   </li>
-                  <li>Resolved software and hardware issues</li>
-                  <li>Collaborated with team and trained new employees</li>
+                  <li>
+                    Resolved both software and hardware issues ranging from
+                    network connectivity to mobile device support to OS
+                    reinstallation
+                  </li>
+                  <li>
+                    Collaborated with colleagues to resolve technical issues and
+                    trained new employees
+                  </li>
                 </ul>
               </CardContent>
               <CardFooter className="text-white mt-auto">
@@ -102,18 +112,49 @@ export default function About() {
           <div className="flex flex-col h-full">
             <Card className="border-none bg-gradient-to-r from-midnightPurple to-blue-500 flex flex-col h-full">
               <CardHeader>
-                <CardTitle></CardTitle>
-                <CardDescription className="text-white flex-grow"></CardDescription>
+                <CardTitle>Career Aspirations</CardTitle>
+              </CardHeader>
+              <CardContent className="text-white">
+                <ul className="list-disc pl-5">
+                  <li>Develop innovative software solutions</li>
+                  <li>Contribute to open-source projects</li>
+                  <li>Find a field to specialize in</li>
+                  <li>Explore AI and machine learning applications</li>
+                  <li>Lead technical teams on impactful projects</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="flex flex-col h-full">
+            <Card className="border-none bg-gradient-to-r from-midnightPurple to-blue-500 flex flex-col h-full">
+              <CardHeader>
+                <CardTitle>Technical Skills</CardTitle>
+              </CardHeader>
+              <CardContent className="text-white">
+                <ul className="list-disc pl-5">
+                  <li>Languages: JavaScript, Java, C, Python, SQL</li>
+                  <li>Web: React, Node.js, Express, HTML/CSS</li>
+                  <li>Tools: Git, VS Code, Jira, Figma</li>
+                  <li>Database: MySQL, Elasticsearch</li>
+                  <li>Other: Data Structures, Algorithms, UX Design</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="flex flex-col h-full">
+            <Card className="border-none bg-gradient-to-r from-midnightPurple to-blue-500 flex flex-col h-full">
+              <CardHeader>
+                <CardTitle>Personal Hobbies</CardTitle>
               </CardHeader>
               <CardContent className="text-white">
                 <ul className="list-disc pl-5">
                   <li>Video Games</li>
+                  <li>TTRPGs</li>
                   <li>Music</li>
                   <li>Web Development</li>
                   <li>Programming</li>
                 </ul>
               </CardContent>
-              <CardFooter className="text-white mt-auto"></CardFooter>
             </Card>
           </div>
         </div>
