@@ -68,11 +68,38 @@ export default function Projects() {
                   <CardContent className="flex-grow flex flex-column items-center justify-center p-6">
                     {project.github && (
                       <div className="mb-4 w-full h-40 relative">
-                        <img
-                          src={`https://opengraph.githubassets.com/1/${project.github.username}/${project.github.repo}`}
-                          alt={`${project.title} GitHub preview`}
-                          className="w-full h-full object-cover rounded-md"
-                        />
+                        <a
+                          href={`https://github.com/${project.github.username}/${project.github.repo}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src={`https://opengraph.githubassets.com/1/${project.github.username}/${project.github.repo}`}
+                            alt={`${project.title} GitHub preview`}
+                            className="w-full h-full object-cover rounded-md"
+                          />
+                        </a>
+                      </div>
+                    )}
+                    {project.googleSlides && (
+                      <div className="mb-4 w-full h-40 relative">
+                        <iframe
+                          src={`https://docs.google.com/presentation/d/${project.googleSlides}/embed?start=false&loop=false&delayms=3000`}
+                          frameBorder="0"
+                          width="100%"
+                          height="100%"
+                          allowFullScreen={true}
+                          mozallowfullscreen="true"
+                          webkitallowfullscreen="true"
+                          className="rounded-md"
+                        ></iframe>
+                      </div>
+                    )}
+                    {!project.github && !project.googleSlides && (
+                      <div className="mb-4 w-full h-40 relative flex items-center justify-center">
+                        <p className="text-white text-center">
+                          {project.description}
+                        </p>
                       </div>
                     )}
                     <div></div>
@@ -82,7 +109,7 @@ export default function Projects() {
                       <img
                         src={`https://skillicons.dev/icons?i=${project.technologies.join(
                           ","
-                        )}`}
+                        )}&perline=5`}
                         alt="Technology icons"
                       />
                     </a>
@@ -92,8 +119,8 @@ export default function Projects() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden md:flex" />
-        <CarouselNext className="hidden md:flex" />
+        <CarouselPrevious className="hidden md:flex border-none bg-gradient-to-r from-midnightPurple to-blue-500 h-[500px] flex flex-col" />
+        <CarouselNext className="hidden md:flex border-none bg-gradient-to-r from-midnightPurple to-blue-500 h-[500px] flex flex-col" />
       </Carousel>
       {showTooltip && <SwipeTooltip />}
     </section>
@@ -108,28 +135,81 @@ const SwipeTooltip = () => (
 
 const projects = [
   {
+    title: "IntelliGest Smart Home",
+    description:
+      "A Smart Home Assistant that utilizes machine learning and computer vision to detect gestures for Deaf Individuals",
+    technologies: [
+      "py",
+      "react",
+      "express",
+      "tailwindcss",
+      "nodejs",
+      "raspberrypi",
+      "opencv",
+      "flask",
+      "docker",
+      "vscode",
+    ],
+    github: {
+      username: "Capstone-Projects-2024-Spring",
+      repo: "project-intelligest-smart-home",
+    },
+  },
+  {
     title: "Purrfect Pets",
     description:
       "PurrfectPets is a platform dedicated to pet adoption, allowing users to discover their ideal companions.",
-    technologies: ["js", "react", "express", "nodejs"],
+    technologies: [
+      "js",
+      "react",
+      "express",
+      "mysql",
+      "nodejs",
+      "azure",
+      "materialui",
+      "vscode",
+      "figma",
+    ],
     github: {
       username: "cis3296f23",
       repo: "purrfectpets",
     },
   },
   {
-    title: "Informed Navigation",
-    description:
-      "A user research project to understand key metrics when it comes to safety and accessibility in the transportation industry",
-    technologies: ["figma"],
-  },
-  {
     title: "Portfolio Website",
     description: "Personal portfolio showcasing projects and skills",
-    technologies: ["nextjs", "react", "tailwind"],
+    technologies: [
+      "js",
+      "nextjs",
+      "react",
+      "tailwind",
+      "vscode",
+      "vercel",
+      "figma",
+    ],
     github: {
       username: "bryanreiter",
       repo: "personal-site",
+    },
+  },
+  {
+    title: "DNDiscord",
+    description:
+      "A Discord bot that allows you to roll die, find and learn about official 5E items, classes, monsters, and more!",
+    technologies: ["js", "nodejs", "discordjs", "vscode", "discord", "bots"],
+    github: {
+      username: "bryanreiter",
+      repo: "DNDiscord",
+    },
+  },
+  {
+    title: "myShell",
+    description:
+      "myShell is a basic UNIX shell that can perform I/O Redirection, Piping, and Background Processing",
+    technologies: ["c", "bash", "clion", "linux", "vscode", "git"],
+    github: {
+      username: "bryanreiter",
+      repo: "myShell",
     },
   },
 ];
