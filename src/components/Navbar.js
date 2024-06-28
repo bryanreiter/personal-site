@@ -48,7 +48,19 @@ export default function Navbar() {
             className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-midnightPurple"
           />
         </button>
-        <ul className="mt-16 space-y-4 text-xl font-bold" style={{ fontFamily: "monospace" }}>
+        <ul
+          className="mt-16 space-y-4 text-xl font-bold"
+          style={{ fontFamily: "monospace" }}
+        >
+          <li>
+            <a
+              href="#intro"
+              className="block text-white hover:text-midnightPurple px-6 py-2 "
+              onClick={() => toggleSidebar()}
+            >
+              Intro
+            </a>
+          </li>
           <li>
             <a
               href="#about"
@@ -56,15 +68,6 @@ export default function Navbar() {
               onClick={() => toggleSidebar()}
             >
               About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#skills"
-              className="block text-white hover:text-midnightPurple px-6 py-2"
-              onClick={() => toggleSidebar()}
-            >
-              Skills
             </a>
           </li>
           <li>
@@ -78,11 +81,11 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="#contact"
+              href="#skills"
               className="block text-white hover:text-midnightPurple px-6 py-2"
               onClick={() => toggleSidebar()}
             >
-              Contact
+              Skills
             </a>
           </li>
         </ul>

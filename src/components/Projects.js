@@ -35,7 +35,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen flex flex-col items-center justify-center py-16 px-4 relative"
+      className="flex flex-col items-center py-16 px-4 relative"
     >
       <h2 className="text-4xl font-bold text-center mb-8">Projects</h2>
       <Carousel className="w-full max-w-7xl">
