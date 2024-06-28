@@ -18,6 +18,23 @@ export default function Home() {
           <Projects />
           <Skills />
         </div>
+        <footer className="text-center py-8">
+          <p>
+            Made with{" "}
+            <span role="img" aria-label="heart">
+              ❤️
+            </span>{" "}
+            by{" "}
+            <a
+              href="https://github.com/bryanreiter"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Bryan Reiter
+            </a>
+          </p>
+        </footer>
       </main>
     </div>
   );

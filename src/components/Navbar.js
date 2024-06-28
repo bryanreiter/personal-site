@@ -54,6 +54,15 @@ export default function Navbar() {
         >
           <li>
             <a
+              href="#intro"
+              className="block text-white hover:text-midnightPurple px-6 py-2 "
+              onClick={() => toggleSidebar()}
+            >
+              Intro
+            </a>
+          </li>
+          <li>
+            <a
               href="#about"
               className="block text-white hover:text-midnightPurple px-6 py-2 "
               onClick={() => toggleSidebar()}
@@ -77,15 +86,6 @@ export default function Navbar() {
               onClick={() => toggleSidebar()}
             >
               Skills
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className="block text-white hover:text-midnightPurple px-6 py-2"
-              onClick={() => toggleSidebar()}
-            >
-              Contact
             </a>
           </li>
         </ul>
