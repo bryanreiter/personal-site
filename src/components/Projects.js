@@ -119,8 +119,8 @@ export default function Projects() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden md:flex border-none bg-gradient-to-r from-midnightPurple to-blue-500 h-[500px] flex flex-col" />
-        <CarouselNext className="hidden md:flex border-none bg-gradient-to-r from-midnightPurple to-blue-500 h-[500px] flex flex-col" />
+        <CarouselPrevious className="border-none bg-gradient-to-r from-midnightPurple to-blue-500 h-[500px] flex flex-col hidden md:flex" />
+        <CarouselNext className="border-none bg-gradient-to-r from-midnightPurple to-blue-500 h-[500px] flex flex-col hidden md:flex" />
       </Carousel>
       {showTooltip && <SwipeTooltip />}
     </section>
