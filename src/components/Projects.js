@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState, useEffect } from "react";
 import {
   Card,
   CardContent,
@@ -19,6 +19,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Projects() {
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setShowTooltip(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <section
       id="projects"
@@ -82,9 +95,16 @@ export default function Projects() {
         <CarouselPrevious className="hidden md:flex" />
         <CarouselNext className="hidden md:flex" />
       </Carousel>
+      {showTooltip && <SwipeTooltip />}
     </section>
   );
 }
+
+const SwipeTooltip = () => (
+  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-70 text-white px-4 py-2 rounded-full text-sm animate-pulse">
+    Swipe to see more
+  </div>
+);
 
 const projects = [
   {
