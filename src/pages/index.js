@@ -15,8 +15,8 @@ export default function Home() {
         <div className="w-full">
           <Intro />
           <About />
-          <Skills />
           <Projects />
+          <Skills />
         </div>
       </main>
     </div>
