@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 
 export default function Intro() {
   const [showGithub, setShowGithub] = useState(false);
@@ -17,6 +18,7 @@ export default function Intro() {
   const [showDiscord, setShowDiscord] = useState(false);
   const [showEnvelope, setShowEnvelope] = useState(false);
   const [showPhone, setShowPhone] = useState(false);
+  const [showResume, setShowResume] = useState(false);
 
   return (
     <section
@@ -43,6 +45,7 @@ export default function Intro() {
                       setTimeout(() => setShowDiscord(true), 2000);
                       setTimeout(() => setShowEnvelope(true), 2500);
                       setTimeout(() => setShowPhone(true), 3000);
+                      setTimeout(() => setShowResume(true), 3500);
                     })
                     .start();
                 }}
@@ -116,6 +119,15 @@ export default function Intro() {
             <a href="tel:484-268-4900">
               <FontAwesomeIcon
                 icon={faPhone}
+                size="2x"
+                className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-midnightPurple"
+              />
+            </a>
+          </div>
+          <div className={`icon ${showResume ? "show" : ""}`}>
+          <a href="/Bryan-Reiter-Resume.pdf" download="Bryan-Reiter-Resume.pdf">
+              <FontAwesomeIcon
+                icon={faFileDownload}
                 size="2x"
                 className="transition duration-300 ease-in-out transform hover:scale-125 hover:text-midnightPurple"
               />
