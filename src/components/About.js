@@ -89,9 +89,8 @@ export default function About() {
                 <ul className="list-disc pl-5">
                   <li>
                     Provided technical support to students, alumni, and staff
-                    through both phone calls and walk-ins using GenesysPureCloud
-                    and BMC Helix ITSM, ensuring prompt resolution and effi
-                    cient service
+                    through both phone calls and walk-ins using Genesys PureCloud
+                    and BMC Helix ITSM, ensuring prompt resolution and efficient service
                   </li>
                   <li>
                     Resolved both software and hardware issues ranging from
