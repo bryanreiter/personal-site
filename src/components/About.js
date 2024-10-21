@@ -48,6 +48,35 @@ export default function About() {
           <div className="flex flex-col h-full">
             <Card className="border-none bg-gradient-to-r from-midnightPurple to-blue-500 flex flex-col h-full">
               <CardHeader className="p-4">
+                <CardTitle>Innovative Control Systems</CardTitle>
+                <CardDescription className="text-white">
+                  <em>Support Technician</em>
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-white flex-grow">
+                <ul className="list-disc pl-5">
+                  <li>
+                    Provide first-level technical support using ITIL standards, resolving issues via telephone and remote tools
+                  </li>
+                  <li>
+                    Deliver high-quality customer service and educate customers on maximizing ICS systems
+                  </li>
+                  <li>
+                    Collaborate with team members to solve complex problems and meet response times
+                  </li>
+                  <li>
+                    Conducted software maintenance and testing, along with hardware and network troubleshooting and configurations
+                  </li>
+                </ul>
+              </CardContent>
+              <CardFooter className="text-white mt-auto">
+                <em>July 2024 - Present</em>
+              </CardFooter>
+            </Card>
+          </div>
+          <div className="flex flex-col h-full">
+            <Card className="border-none bg-gradient-to-r from-midnightPurple to-blue-500 flex flex-col h-full">
+              <CardHeader className="p-4">
                 <CardTitle>Victaulic Internship</CardTitle>
                 <CardDescription className="text-white">
                   <em>Master Data Management Intern at Victaulic</em>
