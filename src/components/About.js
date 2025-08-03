@@ -48,6 +48,35 @@ export default function About() {
           <div className="flex flex-col h-full">
             <Card className="border-none bg-gradient-to-r from-midnightPurple to-blue-500 flex flex-col h-full">
               <CardHeader className="p-4">
+                <CardTitle>St. Luke's University Health Network</CardTitle>
+                <CardDescription className="text-white">
+                  <em>Simulation Specialist</em>
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-white flex-grow">
+                <ul className="list-disc pl-5">
+                  <li>
+                    Operated and maintained advanced simulation equipment and AV systems, ensuring seamless support for clinical education initiatives.
+                  </li>
+                  <li>
+                    Collaborated closely with nursing and physician educators to plan and execute simulation sessions, acting as the technical and logistical lead.
+                  </li>
+                  <li>
+                    Assisted learners in utilizing simulation tools effectively, fostering a supportive learning environment while adhering to strict compliance protocols.
+                  </li>
+                  <li>
+                    Analyzed simulation data and provided technical reports on system performance.
+                  </li>
+                </ul>
+              </CardContent>
+              <CardFooter className="text-white mt-auto">
+                <em>February 2025 - Present</em>
+              </CardFooter>
+            </Card>
+          </div>
+          <div className="flex flex-col h-full">
+            <Card className="border-none bg-gradient-to-r from-midnightPurple to-blue-500 flex flex-col h-full">
+              <CardHeader className="p-4">
                 <CardTitle>Innovative Control Systems</CardTitle>
                 <CardDescription className="text-white">
                   <em>Support Technician</em>
@@ -70,7 +99,7 @@ export default function About() {
                 </ul>
               </CardContent>
               <CardFooter className="text-white mt-auto">
-                <em>July 2024 - Present</em>
+                <em>July 2024 - January 2025</em>
               </CardFooter>
             </Card>
           </div>
